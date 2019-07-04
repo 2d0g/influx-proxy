@@ -103,15 +103,15 @@ func (hs *HttpService) HandlerWrite(w http.ResponseWriter, req *http.Request) {
 		return
 	}
 
-	db := req.URL.Query().Get("db")
+	// db := req.URL.Query().Get("db")
 
-	if hs.db != "" {
-		if db != hs.db {
-			w.WriteHeader(404)
-			w.Write([]byte("database not exist."))
-			return
-		}
-	}
+	// if hs.db != "" {
+	// 	if db != hs.db {
+	// 		w.WriteHeader(404)
+	// 		w.Write([]byte("database not exist."))
+	// 		return
+	// 	}
+	// }
 
 	body := req.Body
 	if req.Header.Get("Content-Encoding") == "gzip" {
