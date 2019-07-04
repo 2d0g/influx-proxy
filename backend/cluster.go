@@ -18,7 +18,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/shell909090/influx-proxy/monitor"
+	"github.com/2d0g/influx-proxy/monitor"
 )
 
 var (
